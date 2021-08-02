@@ -1,12 +1,37 @@
 body {background-color:black;font-family:arial;color:white}
-h1{color:grey;font-family:verdana}
+h1{color:grey;font-family:verdana;text-align:left}
 
+label,button {
+	margin-left:100px;
+}
+
+input,select,button {
+	margin-bottom: 5px;
+}
+
+#principal{
+	margin-left:10px;
+}
+
+#rate {
+	margin-left:30px;
+}
+
+#result {
+	margin-left: 100px;
+}
+
+.footerdiv {
+	text-align:left;
+	padding:0px;
+}
 .maindiv {
+	border-radius:25px;
     background-color:white;
     color:black;
-    width:300px;
+    width:475px;
     padding:20px;
     border-width:25px;
-    text-align:center;
+	text-align:left;
     margin:auto;
 }
