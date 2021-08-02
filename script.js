@@ -10,11 +10,9 @@ function compute(){ // provides all functionalites for what happens once the use
 	var interest = principal * years * rate/100;
 	var year = new Date().getFullYear()+parseInt(years); 
 	var result = document.getElementById("result");
-	
-	var amount = parseFloat(principal) + parseFloat(interest); 
-	
+		
 	// update the html for our result by adjusting its innerHTML attribute
-	result.innerHTML = "\<br\>If you deposit \<mark\>" +principal+"\</mark\>\<br\> at an interest rate of\<mark\> "+rate+"%\</mark\>\<br\>You will receive an amount of \<mark\>"+amount+"\</mark\>,\<br\>in the year \<mark\>"+year+"\</mark\>\<br\>";
+	result.innerHTML = "\<br\>If you deposit \<mark\>" +principal+"\</mark\>\<br\> at an interest rate of\<mark\> "+rate+"%\</mark\>\<br\>You will receive an amount of \<mark\>"+interest+"\</mark\>,\<br\>in the year \<mark\>"+year+"\</mark\>\<br\>";
 }
 
 function updateRate(){ // function that updates the displayed rate value given from the range input bar
